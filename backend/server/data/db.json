@@ -1,0 +1,213 @@
+{
+  "farmers": [
+    {
+      "id": "KRS-FARMER-00291",
+      "name": "Ramesh Kumar Patil",
+      "mobile": "9876540210",
+      "mobileMasked": "XXXXXX0210",
+      "aadhaar": "XXXX-XXXX-3456",
+      "pan": "XXXXX1234F",
+      "district": "Nashik",
+      "state": "Maharashtra",
+      "landArea": "4.5 acres",
+      "bankAccount": "SBIN0001234 / XXXX-XXXX-7890",
+      "agriScore": 750,
+      "cropType": "Wheat",
+      "riskZone": "Moderate (Zone B)",
+      "created_at": "2026-01-15T10:00:00Z"
+    }
+  ],
+  "schemes": [
+    {
+      "id": "SCH-001",
+      "name": "PM-Kisan Samman Nidhi",
+      "category": "Direct Benefit Transfer",
+      "benefit": "₹6,000 / year in 3 installments",
+      "department": "Ministry of Agriculture & Farmers Welfare",
+      "deadline": "2026-03-31",
+      "eligibility": "Small & Marginal Farmers with cultivable land up to 2 hectares",
+      "status": "Active"
+    },
+    {
+      "id": "SCH-002",
+      "name": "Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)",
+      "category": "Irrigation Subsidy",
+      "benefit": "55% Subsidy on Drip & Sprinkler Systems",
+      "department": "Department of Agriculture & Farmers Welfare",
+      "deadline": "2026-04-15",
+      "eligibility": "All farmers with verified land ownership and water source",
+      "status": "Active"
+    },
+    {
+      "id": "SCH-003",
+      "name": "Soil Health Card Scheme",
+      "category": "Soil Testing & Advisory",
+      "benefit": "Free Soil Testing & Crop-Specific Fertilizer Recommendation",
+      "department": "Department of Agriculture & Cooperation",
+      "deadline": "2026-12-31",
+      "eligibility": "Open to all registered agricultural landholders",
+      "status": "Active"
+    }
+  ],
+  "insurance_products": [
+    {
+      "id": "INS-001",
+      "name": "PMFBY Crop Insurance (Rabi / Kharif)",
+      "coverage": 200000,
+      "premium": 3000,
+      "policyTerm": "1 Year (01 Apr 2026 - 31 Mar 2027)",
+      "provider": "Agriculture Insurance Company of India (AIC)"
+    },
+    {
+      "id": "INS-002",
+      "name": "Weather-Based Crop Insurance (WBCIS)",
+      "coverage": 100000,
+      "premium": 1800,
+      "policyTerm": "Season-based",
+      "provider": "HDFC ERGO General Insurance"
+    }
+  ],
+  "applications": [
+    {
+      "referenceNumber": "AND-INS-2026-85822291",
+      "policyNumber": "POL-15544951",
+      "farmerId": "KRS-FARMER-00291",
+      "type": "insurance",
+      "schemeName": "PMFBY Crop Insurance",
+      "coverageAmount": 200000,
+      "paymentAmount": "3000",
+      "utr": "UTR998811223344",
+      "paymentMethod": "UPI",
+      "status": "Under Review",
+      "submittedAt": "2026-08-10T07:40:20.195Z"
+    },
+    {
+      "referenceNumber": "AND-SCH-2026-84920193",
+      "farmerId": "KRS-FARMER-00291",
+      "type": "scheme",
+      "schemeId": "SCH-001",
+      "schemeName": "PM-Kisan Samman Nidhi",
+      "benefitAmount": "6000",
+      "utr": "UTR992810482019",
+      "paymentAmount": "0",
+      "status": "Submitted",
+      "submittedAt": "2026-08-08T14:30:00Z"
+    },
+    {
+      "referenceNumber": "AND-INS-2026-49201847",
+      "policyNumber": "POL-98271049",
+      "farmerId": "KRS-FARMER-00291",
+      "type": "insurance",
+      "schemeName": "PMFBY Crop Insurance",
+      "coverageAmount": 200000,
+      "paymentAmount": "3000",
+      "utr": "UTR849201938210",
+      "paymentMethod": "UPI",
+      "status": "Under Review",
+      "submittedAt": "2026-08-09T09:15:00Z"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "EQ-001",
+      "title": "Mahindra 575 DI Tractor (45 HP)",
+      "type": "Tractor",
+      "rate": "₹800 / hour",
+      "location": "Nashik, Maharashtra",
+      "owner": "Ganesh Machinery Rentals",
+      "contact": "+91 9823410928",
+      "available": true
+    },
+    {
+      "id": "EQ-002",
+      "title": "John Deere Combined Harvester",
+      "type": "Harvester",
+      "rate": "₹1,800 / hour",
+      "location": "Pune, Maharashtra",
+      "owner": "AgriEquip Co.",
+      "contact": "+91 9890123456",
+      "available": true
+    },
+    {
+      "id": "EQ-003",
+      "title": "10L Agriculture Drone Sprayer",
+      "type": "Drone",
+      "rate": "₹450 / acre",
+      "location": "Nashik, Maharashtra",
+      "owner": "SkySpray Tech",
+      "contact": "+91 9765432109",
+      "available": true
+    }
+  ],
+  "logistics": [
+    {
+      "id": "LOG-001",
+      "vehicle": "Tata Ace (1.5 Ton Capacity)",
+      "rate": "₹25 / km",
+      "driver": "Suresh Pawar",
+      "mobile": "+91 9812345678",
+      "rating": "4.8 ★"
+    },
+    {
+      "id": "LOG-002",
+      "vehicle": "Ashok Leyland Dost (3 Ton Capacity)",
+      "rate": "₹40 / km",
+      "driver": "Mahesh Shinde",
+      "mobile": "+91 9823456789",
+      "rating": "4.9 ★"
+    }
+  ],
+  "weather": {
+    "district": "Pune",
+    "temperature": "28°C",
+    "condition": "Partly Cloudy",
+    "humidity": "72%",
+    "windSpeed": "14 km/h",
+    "forecast": [
+      {
+        "day": "Today",
+        "high": "30°C",
+        "low": "21°C",
+        "rain": "20%"
+      },
+      {
+        "day": "Tomorrow",
+        "high": "29°C",
+        "low": "20°C",
+        "rain": "40%"
+      },
+      {
+        "day": "Wednesday",
+        "high": "27°C",
+        "low": "19°C",
+        "rain": "70%"
+      },
+      {
+        "day": "Thursday",
+        "high": "28°C",
+        "low": "20°C",
+        "rain": "30%"
+      }
+    ]
+  },
+  "market": {
+    "crop": "Wheat (Lok-1 Quality)",
+    "currentMandiPrice": "₹2,650 / Quintal",
+    "expectedPeakPrice": "₹2,850 / Quintal",
+    "recommendation": "HOLD (Sell in 2-3 weeks for +7.5% profit)",
+    "mandiRates": [
+      {
+        "mandi": "Nashik APMC",
+        "price": "₹2,650"
+      },
+      {
+        "mandi": "Pune APMC",
+        "price": "₹2,680"
+      },
+      {
+        "mandi": "Latur APMC",
+        "price": "₹2,620"
+      }
+    ]
+  }
+}
