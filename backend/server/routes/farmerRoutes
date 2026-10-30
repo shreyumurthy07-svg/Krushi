@@ -1,0 +1,48 @@
+const { readDb, writeDb } = require('../dbHelper');
+
+function handleFarmerRoutes(req, res, body, pathname) {
+  const db = readDb();
+
+  if (pathname === '/api/farmer/profile' && req.method === 'GET') {
+    const farmer = (db.farmers || [])[0] || {};
+    return { status: 200, data: { success: true, farmer } };
+  }
+
+  if (pathname === '/api/farmer/profile' && req.method === 'PUT') {
+    if (!db.farmers) db.farmers = [];
+    if (db.farmers.length > 0) {
+      db.farmers[0] = { ...db.farmers[0], ...body };
+    } else {
+      db.farmers.push(body);
+    }
+    writeDb(db);
+    return { status: 200, data: { success: true, message: 'Farmer profile updated', farmer: db.farmers[0] } };
+  }
+
+  if (pathname === '/api/farmer/activities' && req.method === 'GET') {
+    const apps = db.applications || [];
+    return { status: 200, data: { success: true, count: apps.length, activities: apps } };
+  }
+
+  if (pathname === '/api/farmer/agri-score' && req.method === 'GET') {
+    const farmer = (db.farmers || [])[0] || {};
+    return {
+      status: 200,
+      data: {
+        success: true,
+        agriScore: farmer.agriScore || 750,
+        maxScore: 900,
+        grade: 'Excellent (Tier A)',
+        factors: [
+          { name: 'Repayment History', impact: '+45 pts', status: 'Positive' },
+          { name: 'Land Holdings', impact: '+30 pts', status: 'Verified' },
+          { name: 'Crop Insurance Status', impact: '+25 pts', status: 'Protected' }
+        ]
+      }
+    };
+  }
+
+  return null;
+}
+
+module.exports = handleFarmerRoutes;
